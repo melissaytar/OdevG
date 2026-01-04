@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melis Berre Aytar | Portfolyo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 0;
+        }
+
+        .profile-card {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            margin-top: -60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .profile-card h1 { 
+            font-size: 2.8rem; 
+            color: #2d3436;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-card p { 
+            color: #6c5ce7; 
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 2.5rem 0 1.5rem;
+            color: #2d3436;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #6c5ce7;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-item {
+            background: #f1f2f6;
+            color: #2d3436;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .skill-item:hover {
+            background: #6c5ce7;
+            color: white;
+            transform: translateY(-3px);
+            border-bottom: 3px solid #4834d4;
+        }
+
+        /* İletişim Butonları */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-email {
+            background-color: #eb4d4b;
+            color: white;
+        }
+
+        .btn-linkedin {
+            background-color: #0077b5;
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background: #2d3436;
+            color: white;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 600px) {
+            .profile-card h1 { font-size: 2rem; }
+            .container { width: 92%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dijital Portfolyo</h1>
+    </header>
+
+    <div class="container">
+        <div class="profile-card">
+            <h1>Melis Berre Aytar</h1>
+            <p>Yönetim Bilişim Sistemleri Öğrencisi</p>
+            <div class="contact-links">
+                <a href="mailto:melisaytar84@gmail.com" class="btn btn-email">📧 E-Posta Gönder</a>
+                <a href="https://linkedin.com/in/melis-aytar-975a9a38b" target="_blank" class="btn btn-linkedin">🔗 LinkedIn Profili</a>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>Hakkımda</h2>
+            <p>Merhaba, ben Melis Berre. <strong>İstanbul Topkapı Üniversitesi</strong>'nde Yönetim Bilişim Sistemleri (YBS) bölümü 3. sınıf öğrencisiyim. Akademik eğitimim süresince teknolojinin iş süreçlerine entegrasyonu, veri analizi ve yazılım geliştirme konularına odaklanıyorum. Geleceğin dijital dünyasında değer katan projeler üretmeyi hedefliyorum.</p>
+        </section>
+
+        <section class="section">
+            <h2>Eğitim Bilgileri</h2>
+            <p><strong>Üniversite:</strong> İstanbul Topkapı Üniversitesi</p>
+            <p><strong>Bölüm:</strong> Yönetim Bilişim Sistemleri (YBS)</p>
+            <p><strong>Sınıf:</strong> 3. Sınıf</p>
+        </section>
+
+        <section class="section">
+            <h2>Yeteneklerim</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Veri Analizi</div>
+                <div class="skill-item">B2 seviyesi İngilizce</div>
+                <div class="skill-item">SQL / Veritabanı</div>
+                <div class="skill-item">İş Analizi</div>
+                <div class="skill-item">Proje Yönetimi</div>
+                <div class="skill-item">MS Office</div>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center;">
+            <h2>Benimle İletişime Geçin</h2>
+            <p>Yeni projeler, staj imkanları veya fikir alışverişi için bana her zaman ulaşabilirsiniz.</p>
+            <br>
+            <p><strong>E-posta:</strong> melisaytar84@gmail.com</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Melis Berre Aytar &copy; 2024</p>
+        <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 10px;">İstanbul Topkapı Üniversitesi | YBS 3. Sınıf</p>
+    </footer>
+
+</body>
+</html>
